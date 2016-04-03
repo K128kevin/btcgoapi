@@ -26,7 +26,25 @@ var routes = utils.Routes {
 	utils.Route {
 		"Index",
 		"GET",
-		root,
-		Index,
+		root + "/prices",
+		GetPrices,
+	},
+	utils.Route {
+		"Index",
+		"GET",
+		root + "/prediction",
+		GetPredictions,
+	},
+	utils.Route {
+		"Index",
+		"POST",
+		root + "/prices",
+		AddPrice,
+	},
+	utils.Route {
+		"Index",
+		"POST",
+		root + "/prediction",
+		AddPrediction,
 	},
 }

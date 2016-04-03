@@ -24,9 +24,9 @@ var root = "/api/tradesim"
 
 var routes = utils.Routes {
 	utils.Route {
-		"GetTrades",
+		"GetTrade",
 		"GET",
-		root,
-		GetTrades,
+		root + "/{tradeId}",
+		GetTrade,
 	},
 }
