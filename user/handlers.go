@@ -61,7 +61,7 @@ func UserDBLookup(userId string) (string, bool) {
 		if err != nil {
 			log.Fatal(err)
 		}
-		return json.Marshal(User{id, Email, LastLogin, Registered})
+		return json.Marshal(User{id, Email, LastLogin, Registered}), false
 	}
 	return "User with ID " + userId + " was not found", true
 }
